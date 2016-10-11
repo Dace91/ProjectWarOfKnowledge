@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Treasure Hunter</string>
+
+    <string name="Version">Version 1.0</string>
+
+    <string name="name">Text to display</string>
+
+    <string name="question1">Answer 2003</string>
+    <string name="question2">Answer 2004</string>
+    <string name="question3">Answer 2005</string>
+</resources>

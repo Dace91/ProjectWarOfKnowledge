@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tou_background"
+    android:orientation="horizontal"
+    tools:context=".CouponActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/chasseauxtresor"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boutique"
+        android:id="@+id/boutique_button"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Félicitations vous avez acheté votre coupon"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/boutique_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp" />
+
+
+    <Button android:id="@+id/coupon2btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/coupon2"
+        android:layout_marginBottom="54dp"
+        android:layout_above="@+id/mapButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button android:id="@+id/mapButton"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/carte"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button android:id="@+id/accueil_button"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:background="@drawable/accueil"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tou_background"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/chasseauxtresor"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="115dp"
+        android:layout_height="20dp"
+        android:text="COMMENT JOUER"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:src="@drawable/trait"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:text="Début de la chasse au trésor : tous les dimanches
+Tirage au sort tous les vendredis sur la place du village des Arc 1950. Un seul parcours par semaine."
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:textSize="12dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView3"
+        android:layout_alignRight="@+id/item_check"
+        android:layout_alignEnd="@+id/item_check" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/qrmini"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="En flashant le QR code trouvé dans la station des ARC 1950, le joueur doit répondre à la question posée sous forme de QCM."
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:textSize="12dp"
+        android:id="@+id/textView3"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/item_check"
+        android:layout_alignEnd="@+id/item_check" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:text="En cliquant sur le bouton “ACCUEIL”, vous pouvez accéder aux menus du jeu.
+En cliquant sur le bouton “CARTE”, vous pouvez accéder à la carte du village et repérer les QR codes cachés.
+En cliquant sur le bouton “SCANNER”, vous pouvez accéder au scanner pour les QR code.
+En cliquant sur le bouton “Boutique”, vous pouvez accéder à la boutique pour dépenser votre monnaie.
+"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:id="@+id/textView"
+        android:textSize="12dp"
+        android:layout_alignBottom="@+id/item_check"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+
+    <CheckBox
+        android:id="@+id/item_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accepter les règles du jeu"
+        android:textColor="@color/abc_primary_text_disable_only_material_dark"
+        android:onClick="itemClicked"
+        android:checked="false"
+        android:layout_gravity="right"
+        android:layout_above="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:background="@drawable/bouton_ok"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
